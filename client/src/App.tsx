@@ -13,7 +13,7 @@ import LoginPage from "./pages/LoginPage";
 
 const App = () => {
   const navigate = useNavigate();
-  const [user, setUser] = useState(getUser);
+  const [user, setUser] = useState<User | null>(getUser);
 
   const handleLogin = (user: User) => {
     setUser(user);
